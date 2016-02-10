@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [Sage](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
@@ -136,3 +137,7 @@ Keep track of development and community news.
 * Follow [@rootswp on Twitter](https://twitter.com/rootswp)
 * Read and subscribe to the [Roots Blog](https://roots.io/blog/)
 * Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
+=======
+# cffc2
+crossfitFallschurch repository 2
+>>>>>>> 4032b7a6792773e5cb33cf9649422a64d0b9c210
