@@ -9,7 +9,6 @@
     <link rel="stylesheet" href="assets/styles/fabio/ripples.min.css">
     <link rel="stylesheet" href="assets/styles/fabio/material.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="jazy.css" type="text/css" media="screen" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
