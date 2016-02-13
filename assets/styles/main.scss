@@ -17,9 +17,10 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+@import "materialize/materialize";
 
 /*  
-Cross Fit Falls Church
+CrossFit Falls Church
 */
 
 /* Body and structure
@@ -37,7 +38,7 @@ h1 {
 
 body {
   color: #252525;
-  background: #fff url(images/body_bg.jpg);
+  background: #fff url("../images/body_bg.jpg");
   font-size: 14px;
   position: relative;
   padding-top: 0px;
