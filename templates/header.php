@@ -1,7 +1,11 @@
 <header class="container-fluid">
   <div class="container">
     <div class="row rowtop">
-      <div class="col-md-6 col-xs-12 logobox"> <a class="brand" href="<?= esc_url(home_url('/')); ?>"><img class="logo" src="assets/images/logo@2x.png" alt="" /></a> </div>
+      <div class="col-md-6 col-xs-12 logobox">
+         <a class="brand" href="<?= esc_url(home_url('/')); ?>">
+          <img class="logo" src="<?= get_template_directory_uri(); ?>/dist/images/logo@2x.png" alt="" />
+         </a>
+      </div>
       <div class="col-md-6 col-xs-12 cfcf-info">
         <p>Telephone: 202-767-3218</p>
         <p>Email: <a href="mailto:info@crossfitfallschurch.com">info@crossfitfallschurch.com</a> </p>
@@ -36,8 +40,3 @@
   </div>
   <!-- /.container--> 
 </header>
-<h1>test</h1>
-<p><?php bloginfo('stylesheet_url'); ?></p>
-|
-<p><?php get_stylesheet_directory(); ?></p>
-|
