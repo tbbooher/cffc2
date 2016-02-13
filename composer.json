@@ -16,8 +16,7 @@
       "crossfit"
   ],
   "support": {
-    "issues": "https://github.com/roots/sage/issues",
-    "forum": "https://discourse.roots.io/"
+    "issues": "https://github.com/tbbooher/cffc2/issues/"
   },
   "require": {
     "php": ">=5.4.0",
