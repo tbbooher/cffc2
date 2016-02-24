@@ -17,10 +17,10 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
-@import "materialize/materialize";
+//@import "materialize/materialize"; // mabye bring back?
 
 /*  
-CrossFit Falls Church
+CrossFit Falls Church 
 */
 
 /* Body and structure
@@ -195,7 +195,18 @@ a {
     text-transform: uppercase;
   }
 }
-
+.nav{
+  & > li{
+    float: left;
+    
+    & > a{
+      color: #fff;
+      &:hover, &:focus{
+        background: trasparent !important;
+      }
+    }
+  }
+}
 button:hover {
   opacity: 0.8;
 }
