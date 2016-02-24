@@ -17,7 +17,7 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
-//@import "materialize/materialize"; // mabye bring back?
+//@import "materialize/materialize"; // hey there! -- so what changes aren't you seeing?
 
 /*  
 CrossFit Falls Church 
@@ -199,11 +199,66 @@ a {
   & > li{
     float: left;
     
-    & > a{
-      color: #fff;
-      &:hover, &:focus{
-        background: trasparent !important;
+    &.current-menu-item{
+      a{
+        background: rgba(255, 255, 255, 0.1);
       }
+    }
+    
+    a{
+      color: rgba(255, 255, 255, 0.84);
+      padding: 20px 15px;
+      &:hover, &:focus{
+        background: transparent;
+      }
+    }
+  }
+}
+.navbar-inverse{
+  background-color: transparent;
+  border: none;
+  .navbar-nav{
+    & > li >a{
+      color: #fff;
+    }
+  }
+}
+.navbar-right{
+  .btn-primary{
+    margin: 8px 0;
+  }
+}
+@-webkit-keyframes input-highlight {
+  0% {
+    background-size: 0 2px, 100% 1px;
+  }
+  100% {
+    background-size: 100% 2px, 100% 1px;
+  }
+}
+@keyframes input-highlight {
+  0% {
+    background-size: 0 2px, 100% 1px;
+  }
+  100% {
+    background-size: 100% 2px, 100% 1px;
+  }
+}
+.navbar-form{
+  margin-top: 16px;
+  .form-control{
+    border-radius: 0;
+    height: 28px;
+    background-color: #fff;
+    background-position: center bottom, center calc(100% - 1px);
+    background-repeat: no-repeat;
+    background-size: 0 2px, 100% 1px;
+    background-image: linear-gradient(#61bc47, #61bc47), linear-gradient(#d2d2d2, #d2d2d2);
+    
+    &:focus{
+      background-image: linear-gradient(#61bc47, #61bc47), linear-gradient(#d2d2d2, #d2d2d2);
+      -webkit-animation: input-highlight 0.5s forwards;
+      animation: input-highlight 0.5s forwards;
     }
   }
 }
@@ -494,6 +549,14 @@ header {
     display: block;
     margin: 0 0 0px;
   }
+}
+
+/**  Cards   **/
+.card{
+  background: #ffffff;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.23), 0 3px 10px rgba(0, 0, 0, 0.16);
+  color: rgba(0, 0, 0, 0.84);
+  border-radius: 2px;
 }
 
 /** MOBILE AND TABLET DEVICES **/
