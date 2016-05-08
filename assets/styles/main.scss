@@ -211,6 +211,49 @@ a {
       &:hover, &:focus{
         background: transparent;
       }
+      
+      ul.sub-menu{
+        display: none;
+        position: absolute;
+        top: 100%;
+        background: #151515;
+        z-index: 99;
+        min-width: 150px;
+        
+        li{
+          border-top: 1px solid #292929;
+          
+          a{
+              display: block;
+              text-align: left;
+              padding: 10px 20px;
+              
+              &:hover, &:focus{
+                background: #292929;
+              }
+          }
+          &:first-child{
+            border-top: none;
+          }
+        }
+      }
+      &.menu-item-has-children > a:after{
+        width: 0;
+        height: 0;
+        border: 0.313em solid transparent;
+        border-bottom: none;
+        border-top-color: #fff;
+        content: '';
+        vertical-align: middle;
+        display: inline-block;
+        position: relative;
+        right: -0.313em;
+      }
+      &:hover{
+        ul.sub-menu{
+          display: block;
+        }
+      }
     }
   }
 }
@@ -587,6 +630,12 @@ header {
   }
 }
 
+.page-header{
+  h1{
+    display: block;
+  }
+}
+
 /** MOBILE AND TABLET DEVICES **/
 @media handheld, only screen and (max-width: 768px) {
   .embed-container {
@@ -639,6 +688,41 @@ header {
     margin-bottom: 20px;
     h3 {
       text-align: center;
+    }
+  }
+}
+@media only screen and (max-width: 767px ){
+  .nav{
+    & > li{
+        float: none;
+        display: block;
+        
+        ul.sub-menu{
+          position: static;
+          width: 100%;
+          
+          a{
+            padding-left: 30px;
+          }
+        }
+        
+        & > a{
+          text-align: left;
+          padding: 10px 20px;
+        }
+        &.menu-item-has-children > a:after{
+          margin: 8px;
+          float: right;
+        }
+        &:first-child{
+          border-top: 1px solid #292929;
+        }
+        &:last-child{
+          border-bottom: 1px solid #292929;
+        }
+    }
+    .navbar-form{
+        margin-top: 0;
     }
   }
 }

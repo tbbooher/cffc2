@@ -152,17 +152,17 @@
 </div>
 </section><footer class="container-fluid foot">
 <div class="container">
-<div class="row">
-<div class="col-md-6 col-xs-12 call-us-box">
-<p class="call-us">Call Us Now! <a href="tel:571.733.7189">571.733.7189</a></p>
-
-</div>
-<div class="col-md-6 col-xs-12 social-media">
-<div class="mySocial"><a href="#"><img src="/wp-content/themes/cffc2/dist/images/instagram.png" alt="" /></a><a href="#"><img src="/wp-content/themes/cffc2/dist/images/facebook.png" alt="" /></a></div>
-Email: <a href="mailto:info@crossfitfallschurch.com">info@crossfitfallschurch.com</a>
-
-</div>
-</div><!-- .row -->
+	<div class="row">
+		<div class="col-md-6 col-xs-12 call-us-box">
+			<p class="call-us">Call Us Now! <a href="tel:571.733.7189">571.733.7189</a></p>
+		
+		</div>
+		<div class="col-md-6 col-xs-12 social-media">
+			<div class="mySocial"><a href="#"><img src="/wp-content/themes/cffc2/dist/images/instagram.png" alt="" /></a><a href="#"><img src="/wp-content/themes/cffc2/dist/images/facebook.png" alt="" /></a></div>
+			Email: <a href="mailto:info@crossfitfallschurch.com">info@crossfitfallschurch.com</a>
+		
+		</div>
+	</div><!-- .row -->
 </div><!-- .container-fluid -->
 
 </footer>
