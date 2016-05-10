@@ -2,11 +2,11 @@
 	<div class="row panel1">
 		<div class="col-sm-5 col-xs-12">
 			<!-- top left -->
-			<?php the_field("what_is_cffc"); ?>
+			<?php the_field("what_is_cffc", 10866); ?>
 		</div>
 		<div class="col-sm-6 col-sm-offset-1 col-xs-12 path-to">
 			<!-- top right -->
-			<?php the_field("home_page_right_side"); ?>
+			<?php the_field("home_page_right_side", 10866); ?>
 		</div>
 	</div>
 </div>
@@ -99,7 +99,6 @@
 	</div><!-- .container-fluid -->
 </div>
 <div class="container-fluid location">
-<div class="embed-container"><iframe style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.1111690556327!2d-77.1684088846504!3d38.8868752670148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b4e92e158b29%3A0xe4e12fd474db91a4!2s130+W+Jefferson+St%2C+Falls+Church%2C+VA+22046!5e0!3m2!1sen!2sus!4v1447541434330" width="600" height="450" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div>
 </div>
 <section id="sitemap">
 <div class="container-fluid">
