@@ -1,16 +1,4 @@
-<?php
-/**
- * Template for displaying static pages
- * 
- * @package bootstrap-basic
- */
-get_header();
-/**
- * determine main column size from actived sidebar
- */
-//$main_column_size = bootstrapBasicGetMainColumnSize();
-?> 
-        <div class="col-md-12 content-area" id="main-column">
+     <div class="col-md-12 content-area" id="main-column">
             <div class="row">
                 <?php 
                 while (have_posts()) {
@@ -18,8 +6,8 @@ get_header();
                   get_template_part('content', 'page');
                 } //endwhile;
                 ?> 
+                <?php get_template_part('templates/page-header', 'page-header'); ?>
             </div>  
-            <p>this is a test -- delete me </p>
                     <!-- now display coaches -->
                     
             <?php

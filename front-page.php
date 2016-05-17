@@ -1,4 +1,46 @@
 <div class="container">
+	<!-- slider starts here -->
+	<?php if ( function_exists( "easingslider" ) ) { easingslider(10933); } ?>
+	<!-- slider ends here -->
+	<div class="row margin-top-bottom">
+		<div class="col-sm-4">
+			<?php
+                $args = array( 'post_type' => 'wod', 'posts_per_page' => 1 );
+                $loop = new WP_Query( $args );
+                while ( $loop->have_posts() ) :
+                  $loop->the_post();
+                  $title = get_the_title();
+                  $content = get_the_content();
+                  $permalink = get_permalink( get_the_ID());
+                  $num_comments =  get_comments_number();
+                    if ( $num_comments == 0 ) {
+                        $comments = __('No Comments');
+                    } elseif ( $num_comments > 1 ) {
+                        $comments = $num_comments . __(' Comments');
+                    } else {
+                        $comments = __('1 Comment');
+                    }
+                    $write_comments = '<a href="' . get_comments_link() .'">'. $comments.'</a>';
+                  $image = get_the_post_thumbnail(get_the_ID(), 'medium', array( 'class' => 'img-thumbnail img-responsive' ));
+                endwhile;
+                wp_reset_postdata();
+                if ($image == '') {
+                    $image = '<img src="'.get_bloginfo('template_directory').'/img/Cookies.jpg">';
+                };
+            ?>
+            <?php echo $image; ?>
+		</div>
+		<div class="col-sm-8">
+			<?php   
+			$my_id = 10866;
+			$post_id_5369 = get_post($my_id);
+			$content = $post_id_5369->post_content;
+			$content = apply_filters('the_content', $content);
+			$content = str_replace(']]>', ']]>', $content);
+			echo $content;
+			?>
+		</div>
+	</div>
 	<div class="row panel1">
 		<div class="col-sm-5 col-xs-12">
 			<!-- top left -->
@@ -15,12 +57,10 @@
 		<div class="container ">
 			<div class="row">
 				<h2 class="bigtitle">Testimonials</h2>
+				<?php the_post(); ?>
+				<?php the_content(); ?>
 			</div><!-- .row -->
 		</div><!-- .container-fluid -->
-	</div>
-	<div class="container-fluid">
-			<?php the_post(); ?>
-			<?php the_content(); ?>
 	</div>
 </section>
 <section id="wod">
