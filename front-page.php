@@ -3,7 +3,7 @@
 	<?php if ( function_exists( "easingslider" ) ) { easingslider(10933); } ?>
 	<!-- slider ends here -->
 	<div class="row margin-top-bottom">
-		<div class="col-sm-4">
+		<div class="col-sm-4 margin-bottom">
 			<?php
                 $args = array( 'post_type' => 'wod', 'posts_per_page' => 1 );
                 $loop = new WP_Query( $args );
@@ -30,7 +30,7 @@
             ?>
             <?php echo $image; ?>
 		</div>
-		<div class="col-sm-8">
+		<div class="col-sm-8 margin-bottom">
 			<?php   
 			$my_id = 10866;
 			$post_id_5369 = get_post($my_id);
