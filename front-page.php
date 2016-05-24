@@ -1,6 +1,8 @@
 <div class="container">
 	<!-- slider starts here -->
-	<?php if ( function_exists( "easingslider" ) ) { easingslider(10933); } ?>
+	<div class="home-slider">
+		<?php if ( function_exists( "easingslider" ) ) { easingslider(10933); } ?>
+	</div>
 	<!-- slider ends here -->
 	<div class="row margin-top-bottom">
 		<div class="col-sm-4 margin-bottom">
@@ -91,11 +93,9 @@
 </div>
 </section>
 <div class="container-fluid sponsors-bar">
-	<div class="container ">
-		<div class="row">
-			<div class="col-sm-3 col-xs-6"><img src="/wp-content/themes/cffc2/dist/images/sponsor2.png" alt="" /></div>
-			<div class="col-sm-3 col-xs-6"><img src="/wp-content/themes/cffc2/dist/images/sponsor3.png" alt="" /></div>
-			<div class="col-sm-3 col-xs-6"><img src="/wp-content/themes/cffc2/dist/images/sponsor5.png" alt="" /></div>
-		</div><!-- .row -->
+	<div class="container">
+		<img src="/wp-content/themes/cffc2/dist/images/sponsor2.png" alt="" class="sponsors-img" />
+		<img src="/wp-content/themes/cffc2/dist/images/sponsor3.png" alt="" class="sponsors-img" />
+		<img src="/wp-content/themes/cffc2/dist/images/sponsor5.png" alt="" class="sponsors-img" />
 	</div><!-- .container-fluid -->
 </div>
