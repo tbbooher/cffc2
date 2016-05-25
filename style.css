@@ -90,6 +90,24 @@ img{ max-width: 100%; }
 .sponsors-bar .sponsors-img{ margin: 10px 20px; }
 .main{ margin-bottom: 30px }
 .sidebar{ margin-bottom: 30px; }
+header:not(.header){ background: transparent; color: #252525; }
+article.post{ margin-bottom: 25px; padding-bottom: 25px; border-bottom: 1px solid #ccc; }
+.single-post .comments .reply a,
+.nav-previous a{ display: inline-block; padding: 10px 25px; background-color: #61bc47; color: #fff; border-radius: 5px; font-weight: bold; }
+article.post .entry-title{ color: #000; font-size: 32px; }
+article.post .entry-title a{ color: #000; }
+article.post .byline{ text-align: center; }
+.single-post .main{ margin-top: 30px; }
+.single-post article header h1{ display: block; }
+.single-post .comments h2{ margin-bottom: 15px; }
+.single-post .comments .comment-meta{margin-bottom: 25px; }
+.single-post .comments .comment-meta .comment-author{ margin-bottom: 10px; }
+.single-post .comments .comment-list{ margin-bottom: 30px; }
+.single-post .comments .comment-body,
+.single-post .comments .comment-respond .comment-reply-title,
+.single-post .comments .comment-list li{ margin-bottom: 25px; }
+.single-post .comments .comment-list li:last-child{ margin-bottom: 0; }
+
 
 @media only screen and (max-width: 768px){
     .sponsors-bar .sponsors-img{ max-width: 150px; }

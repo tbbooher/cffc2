@@ -1,4 +1,4 @@
-<header class="container-fluid">
+<header class="container-fluid header">
   <div class="container">
     <div class="row rowtop">
       <div class="col-md-6 col-xs-12 logobox">
