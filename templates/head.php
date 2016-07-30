@@ -16,7 +16,6 @@
     <?php wp_head(); ?>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/dist/styles/font-awesome.min.css" type="text/css" media="screen" />
-    <link rel="stylesheet" href="<?= get_template_directory_uri(); ?>/style.css" type="text/css" media="screen" />
     <script src="<?= get_template_directory_uri(); ?>/dist/scripts/doubletaptogo.min.js"></script>
     <script>
         jQuery(document).ready(function(){
