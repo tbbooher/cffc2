@@ -213,7 +213,7 @@ a {
   }
 }
 
-.nav {
+.menu-primary_navigation-container .nav {
   & > li {
     float: left;
 
@@ -1139,4 +1139,8 @@ article.post .byline {
 
 main.main p {
   padding-right: 12px;
+}
+
+.nav-pills li {
+  float: none;
 }
